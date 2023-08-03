@@ -6,8 +6,4 @@ import studio.hcmc.exposed.table.varchar
 
 object BoardTable : LongIdTable() {
     val name by varchar(20) { uniqueIndex() }
-
-    init {
-        create()
-    }
 }
